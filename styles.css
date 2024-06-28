@@ -1,0 +1,23 @@
+/* Definir la familia de fuentes */
+@font-face {
+  font-family: 'MiFuente';
+  src: url('https://www.mycircutor.com/Netto-Pro.9a20516a57996104b709.otf');
+}
+
+/* Utilizar la familia de fuentes en un selector de clase */
+.mi-elemento {
+  font-family: Arial, sans-serif; /* Prioridad de la fuente */
+}
+
+*,
+p {
+  box-sizing: border-box;
+  font-family: 'MiFuente', Arial, sans-serif; /* Prioridad de la fuente */
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-color: white;
+  font-family: 'MiFuente';
+}
