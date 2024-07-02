@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!--
       Need a visual blank slate?
       Remove all code in `styles.css`!
     -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <p>Test of typo</p>
-  </body>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <div class="report">
+    <div class="header">
+      <div class="logo">
+        <img src="logo.svg" alt="">
+      </div>
+      <div class="header__info">
+        <span><strong>QNA600</strong></span>
+        <span>Viladecavalls - Barcelona | 16/06/2024</span>
+      </div>
+    </div>
+    <section>
+      <h1>Power Frecuency</h1>
+      <p>Mean value of the fundamental frequency measured in 10 seconds</p>
+      <p>For networks coupled by synchronous connections to an interconnected systemAccording to EN50160, frequency analysis period should be one year</p>
+    </section>
+    <section>
+      <p><strong>Record start date:</strong> 15/06/2024 14:09:50</p>
+      <p><strong>Record start date:</strong> 15/06/2024 15:09:50</p>
+      <p><strong>Nominal frecuency:</strong> 60hz</p>
+    </section>
+    <section>
+      <table class="cds-table cds-table--full-width">
+        <thead>
+        <tr>
+            <th>EN 50160 Requirement</th>
+            <th>% time needed for compliance</th>
+            <th>Measured (% time)</th>
+            <th>Result</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>59.50Hz - 60.50Hz</td>
+                <td>99.5%</td>
+                <td>100%</td>
+                <!-- availables colrs are success, alert, error -->
+                <td class="color-success">Pass</td>
+            </tr>
+            <tr>
+              <td>57.50Hz - 62.50Hz</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td class="color-success">Pass</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+    <section>
+     <!--  Here is a line graph with the frequency in the selected period -->
+     <img class="report-img" src="line-chart-frecuency.svg" alt="">
+    </section>
+  </div>
+</body>
+
 </html>

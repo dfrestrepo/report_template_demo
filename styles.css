@@ -1,23 +1,74 @@
-/* Definir la familia de fuentes */
-@font-face {
-  font-family: 'MiFuente';
-  src: url('https://www.mycircutor.com/Netto-Pro.9a20516a57996104b709.otf');
+@import './cds-bundle.css';
+
+
+strong {
+    font-family: 'NettoPro';
 }
 
-/* Utilizar la familia de fuentes en un selector de clase */
-.mi-elemento {
-  font-family: Arial, sans-serif; /* Prioridad de la fuente */
+th {
+    font-family: 'NettoPro';
+    font-size: 12px;
 }
 
-*,
-p {
-  box-sizing: border-box;
-  font-family: 'MiFuente', Arial, sans-serif; /* Prioridad de la fuente */
+td {
+    font-family: 'NettoPro';
+    font-size: 12px;
 }
 
 body {
-  margin: 0;
-  color: black;
-  background-color: white;
-  font-family: 'MiFuente';
+    font-size: 12px;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width:600px) {
+    body {
+        font-size: 16px;
+    }
+
+    th,
+    td {
+        font-size: 16px;
+    }
+}
+
+
+.report {
+    width: 100%;
+    max-width: 1000px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cds-color-border-default);
+    padding-bottom: 4px;
+}
+
+.header__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+/** helpers **/
+
+.color-success{
+    color: var(--cds-color-feedback-success-main);
+}
+.color-alert{
+    color: var(--cds-color-feedback-alert-main);
+}
+.color-error{
+    color: var(--cds-color-feedback-error-main);
 }
